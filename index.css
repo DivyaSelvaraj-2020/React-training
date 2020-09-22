@@ -1,0 +1,64 @@
+body {
+    background-color: lightblue;
+  }
+  [class|=top] {
+    background: brown;
+  }
+  #para1 {
+    text-align: center;
+    color: red;
+  }
+  h2 {
+    padding: 25px;
+    border: 10px solid #6f4caf;
+    background: pink;
+  }
+  #idSelector
+  {
+      font-style: italic;
+      color: red;
+  }
+  .classSelector
+  {
+      font-size: 14px;
+      font-style:italic;
+      color: rgb(88, 7, 88);
+      background-color: plum;
+  }
+  [class$="test"] {
+    background: blueviolet;
+  }
+
+  input[type="text"] {
+    width: 150px;
+    display: block;
+    margin-bottom: 10px;
+    background-color: rgb(146, 5, 24);
+  }
+  
+  input[type="button"] {
+    width: 120px;
+    margin-left: 35px;
+    display: block;
+  }
+  a.highlight:hover {
+    color: #4CAF50;
+  } 
+  
+  /* Descendant */
+div ul{
+  color: palevioletred;
+}
+/* child */
+div > p 
+{
+  font-style: italic;
+}
+/* general sibling */
+div ~ p{
+  color: blue;
+}
+/* adjacent sibling */
+h4 + p {
+  color: pink;
+}
